@@ -1,7 +1,7 @@
 // LiveCode201902 2019-01-12 16:09:05
 
-int HEIGHT = 50;
-int WIDTH = 50;
+int HEIGHT = 80;
+int WIDTH = 65;
 String values = "0123456789ABCDEF";
 
 boolean video = false;
@@ -11,8 +11,8 @@ PFont font;
 
 void setup() {
   size(640, 480);
-  for (int y = 0 ; y < height ; y += HEIGHT) {
-    for (int x = 0 ; x < width ; x += WIDTH) {
+  for (int y = 0 ; y < height + HEIGHT ; y += HEIGHT) {
+    for (int x = 0 ; x < width + WIDTH ; x += WIDTH) {
       numbers.add(new Number(x, y));
     }
   }
@@ -55,6 +55,7 @@ class Number {
   void draw() {
     value += delta;
     stroke(0, 255, 0);
+    fill(0, 255, 0);
     text("" + (int)(value % values.length()), x, y);
   }
 }
