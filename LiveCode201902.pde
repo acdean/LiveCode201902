@@ -22,6 +22,7 @@ void setup() {
 void draw() {
 
   background(0);
+  textFont(font);
   for (Number n : numbers) {
     n.draw();
   }
