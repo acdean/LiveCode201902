@@ -51,7 +51,7 @@ class Number {
   
   void draw() {
     stroke(0, 255, 0);
-    text("" + (int)(value % values.length()) , x, y);
+    text("" + (int)(value % values.length()), x, y);
   }
 }
 
