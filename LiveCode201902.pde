@@ -53,7 +53,7 @@ class Number {
     value = 1;
     delta = random(.01);
     c = color(random(64, 128), random(64, 128), random(64, 128));
-    s = (int)(random(190, 210);
+    s = (int)(random(190, 210));
   }
   
   void draw() {
