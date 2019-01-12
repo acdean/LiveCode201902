@@ -20,6 +20,7 @@ void setup() {
 void draw() {
 
   background(0);
+  println(frameCount);
   for (Number n : numbers) {
     n.draw();
   }
