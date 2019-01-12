@@ -56,7 +56,8 @@ class Number {
     value += delta;
     stroke(0, 255, 0);
     fill(0, 255, 0);
-    text("" + values.substr((int)(value % values.length()), 1), x, y);
+    int v = (int)(value % values.length();
+    text("" + values.substring(v, v), x, y);
   }
 }
 
