@@ -1,10 +1,11 @@
 // LiveCode201902 2019-01-12 16:09:05
 
-int HEIGHT = 160;
-int WIDTH = 130;
-String values = "01";
+int HEIGHT = 260;
+int WIDTH = 180;
+int FONT_SIZE = 400;
+//String values = "01";
 //String values = "0123456789";
-//String values = "0123456789ABCDEF";
+String values = "0123456789abcdef";
 
 boolean video = false;
 
@@ -13,14 +14,14 @@ PFont font;
 
 void setup() {
   size(1600, 900);
-  for (int y = 0 ; y < height + HEIGHT ; y += HEIGHT) {
+  for (int y = HEIGHT ; y < height + HEIGHT ; y += HEIGHT) {
     for (int x = 0 ; x < width + WIDTH ; x += WIDTH) {
       numbers.add(new Number(x, y));
     }
   }
   //String[] fontList = PFont.list();
   //printArray(fontList);
-  font = createFont("Ubuntu Mono Bold", 200);
+  font = createFont("Ubuntu Mono Bold", FONT_SIZE);
 }
 
 void draw() {
@@ -56,7 +57,7 @@ class Number {
     this.y = y;
     value = 1;
     delta = random(.03);
-    c = color(random(0, 128), random(0, 128), random(0, 128));
+    c = color(random(0, 256), random(0, 256), random(0, 256));
     s = (int)(random(-40, 40));
   }
   
@@ -64,7 +65,7 @@ class Number {
     value += delta;
     stroke(c);
     fill(c);
-    textSize(200 + s);
+    textSize(FONT_SIZE + s);
     int v = (int)(value % values.length());
     text("" + values.substring(v, v + 1), x, y);
   }
