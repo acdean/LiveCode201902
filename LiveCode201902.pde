@@ -1,7 +1,7 @@
 // LiveCode201902 2019-01-12 16:09:05
 
-int HEIGHT = 80;
-int WIDTH = 65;
+int HEIGHT = 160;
+int WIDTH = 130;
 String values = "0123456789ABCDEF";
 
 boolean video = false;
@@ -16,7 +16,7 @@ void setup() {
       numbers.add(new Number(x, y));
     }
   }
-  font = createFont("Courier", 100);
+  font = createFont("Courier", 200);
 }
 
 void draw() {
