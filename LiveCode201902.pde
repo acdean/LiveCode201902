@@ -10,7 +10,7 @@ ArrayList<Number> numbers = new ArrayList();
 PFont font;
 
 void setup() {
-  size(640, 480);
+  size(1500, 1080);
   for (int y = 0 ; y < height + HEIGHT ; y += HEIGHT) {
     for (int x = 0 ; x < width + WIDTH ; x += WIDTH) {
       numbers.add(new Number(x, y));
