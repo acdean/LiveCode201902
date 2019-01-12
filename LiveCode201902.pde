@@ -44,18 +44,20 @@ class Number {
   float value;
   float delta;
   int x, y;
+  color c;
   
   Number(int x, int y) {
     this.x = x;
     this.y = y;
     value = 1;
     delta = random(.01);
+    c = color(random(64, 128), random(64, 128), random(64, 128));
   }
   
   void draw() {
     value += delta;
-    stroke(0, 255, 0);
-    fill(0, 255, 0);
+    stroke(c);
+    fill(c);
     int v = (int)(value % values.length());
     text("" + values.substring(v, v + 1), x, y);
   }
