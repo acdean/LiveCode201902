@@ -49,7 +49,7 @@ class Number {
   }
   
   void draw() {
-    text("" + (int)(value % values.size()) , x, y);
+    text("" + (int)(value % values.length()) , x, y);
   }
 }
 
