@@ -43,7 +43,7 @@ class Number {
   int x, y;
   
   Number(int x, int y) {
-    this.x = y;
+    this.x = x;
     this.y = y;
     value = 1;
     delta = random(.01);
