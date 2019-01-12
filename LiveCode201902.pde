@@ -18,8 +18,8 @@ void setup() {
       numbers.add(new Number(x, y));
     }
   }
-  String[] fontList = PFont.list();
-  printArray(fontList);
+  //String[] fontList = PFont.list();
+  //printArray(fontList);
   font = createFont("Ubuntu Mono Bold", 200);
 }
 
