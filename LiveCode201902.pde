@@ -2,16 +2,17 @@
 
 int HEIGHT = 50;
 int WIDTH = 50;
-String nubers = "0123456789ABCDEF";
+String values = "0123456789ABCDEF";
 
 boolean video = false;
 
-ArrayList<Number> number = new ArrayList();
+ArrayList<Number> numbers = new ArrayList();
 
 void setup() {
   size(640, 480);
   for (int y = 0 ; y < height ; y += HEIGHT) {
     for (int x = 0 ; x < width ; y += WIDTH) {
+      numbers.add(new Number(x, y));
     }
   }
 }
@@ -36,9 +37,20 @@ void draw() {
 }
 
 class Number {
-  int value;
-  int delta;
+  float value;
+  float delta;
   int x, y;
+  
+  Number(int x, iny y) {
+    this.x = y;
+    this.y = y;
+    value = 1;
+    delta = random(.01);
+  }
+  
+  void draw() {
+    text("" + (int)(value % values.size()) , x, y);
+  }
 }
 
 // save a snapshot on keypress
