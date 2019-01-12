@@ -45,6 +45,7 @@ class Number {
   float delta;
   int x, y;
   color c;
+  int s;
   
   Number(int x, int y) {
     this.x = x;
@@ -52,12 +53,14 @@ class Number {
     value = 1;
     delta = random(.01);
     c = color(random(64, 128), random(64, 128), random(64, 128));
+    s = (int)(random(190, 210);
   }
   
   void draw() {
     value += delta;
     stroke(c);
     fill(c);
+    textSize(s);
     int v = (int)(value % values.length());
     text("" + values.substring(v, v + 1), x, y);
   }
