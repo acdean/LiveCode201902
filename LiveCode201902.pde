@@ -2,7 +2,9 @@
 
 int HEIGHT = 160;
 int WIDTH = 130;
-String values = "0123456789ABCDEF";
+String values = "01";
+//String values = "0123456789";
+//String values = "0123456789ABCDEF";
 
 boolean video = false;
 
