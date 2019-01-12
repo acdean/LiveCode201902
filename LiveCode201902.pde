@@ -50,6 +50,7 @@ class Number {
   }
   
   void draw() {
+    value += delta;
     stroke(0, 255, 0);
     text("" + (int)(value % values.length()), x, y);
   }
