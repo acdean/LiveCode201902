@@ -53,14 +53,14 @@ class Number {
     value = 1;
     delta = random(.01);
     c = color(random(0, 128), random(0, 128), random(0, 128));
-    s = (int)(random(190, 210));
+    s = (int)(random(-40, 40));
   }
   
   void draw() {
     value += delta;
     stroke(c);
     fill(c);
-    textSize(s);
+    textSize(200 + s);
     int v = (int)(value % values.length());
     text("" + values.substring(v, v + 1), x, y);
   }
