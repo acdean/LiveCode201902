@@ -19,6 +19,7 @@ void setup() {
 
 void draw() {
 
+  background(0);
   for (Number n : numbers) {
     n.draw();
   }
@@ -49,6 +50,7 @@ class Number {
   }
   
   void draw() {
+    stroke(0, 255, 0);
     text("" + (int)(value % values.length()) , x, y);
   }
 }
