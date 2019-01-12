@@ -53,7 +53,7 @@ class Number {
     this.x = x;
     this.y = y;
     value = 1;
-    delta = random(.01);
+    delta = random(.03);
     c = color(random(0, 128), random(0, 128), random(0, 128));
     s = (int)(random(-40, 40));
   }
