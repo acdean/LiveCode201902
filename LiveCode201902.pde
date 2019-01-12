@@ -41,7 +41,7 @@ class Number {
   float delta;
   int x, y;
   
-  Number(int x, iny y) {
+  Number(int x, int y) {
     this.x = y;
     this.y = y;
     value = 1;
