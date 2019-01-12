@@ -16,7 +16,7 @@ void setup() {
       numbers.add(new Number(x, y));
     }
   }
-  font = createFont("Courier New", 200);
+  font = createFont("Time New Roman", 200);
 }
 
 void draw() {
