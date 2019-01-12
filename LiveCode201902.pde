@@ -16,6 +16,8 @@ void setup() {
       numbers.add(new Number(x, y));
     }
   }
+  String[] fontList = PFont.list();
+  printArray(fontList);
   font = createFont("Time New Roman", 200);
 }
 
