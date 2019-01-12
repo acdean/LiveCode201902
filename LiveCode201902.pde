@@ -11,7 +11,7 @@ ArrayList<Number> numbers = new ArrayList();
 void setup() {
   size(640, 480);
   for (int y = 0 ; y < height ; y += HEIGHT) {
-    for (int x = 0 ; x < width ; y += WIDTH) {
+    for (int x = 0 ; x < width ; x += WIDTH) {
       numbers.add(new Number(x, y));
     }
   }
@@ -20,7 +20,6 @@ void setup() {
 void draw() {
 
   background(0);
-  println(frameCount);
   for (Number n : numbers) {
     n.draw();
   }
