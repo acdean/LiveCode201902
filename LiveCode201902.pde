@@ -18,7 +18,7 @@ void setup() {
   }
   String[] fontList = PFont.list();
   printArray(fontList);
-  font = createFont("Time New Roman", 200);
+  font = createFont("Ubuntu Mono Bold", 200);
 }
 
 void draw() {
