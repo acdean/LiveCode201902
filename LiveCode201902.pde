@@ -7,6 +7,7 @@ String values = "0123456789ABCDEF";
 boolean video = false;
 
 ArrayList<Number> numbers = new ArrayList();
+PFont font;
 
 void setup() {
   size(640, 480);
@@ -15,6 +16,7 @@ void setup() {
       numbers.add(new Number(x, y));
     }
   }
+  font = createFont("Courier", 100);
 }
 
 void draw() {
