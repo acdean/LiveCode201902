@@ -57,7 +57,7 @@ class Number {
     stroke(0, 255, 0);
     fill(0, 255, 0);
     int v = (int)(value % values.length());
-    text("" + values.substring(v, v), x, y);
+    text("" + values.substring(v, v + 1), x, y);
   }
 }
 
